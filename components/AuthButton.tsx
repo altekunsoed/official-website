@@ -1,27 +1,24 @@
-import { createClient } from "@/utils/supabase/server";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import { Button } from "@/components/ui/button";
+import { createSupabaseServerClient } from "@/lib/supabase/server";
 
 export default async function AuthButton() {
-  const supabase = createClient();
+  const supabase = createSupabaseServerClient();
 
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
+  const { data } = await (await supabase).auth.getUser();
 
-  const signOut = async () => {
+  const logout = async () => {
     "use server";
-
-    const supabase = createClient();
-    await supabase.auth.signOut();
-    return redirect("/login");
+    const supabse = await createSupabaseServerClient();
+    await supabse.auth.signOut();
+    redirect("/login");
   };
 
-  return user ? (
+  return data.user ? (
     <div className="flex items-center gap-4">
-      Hey, {user.email}!
-      <form action={signOut}>
+      Hey, {data.user.user_metadata.name}!
+      <form action={logout}>
         <Button variant={"destructive"} size={"lg"}>
           Sign Out
         </Button>

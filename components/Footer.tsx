@@ -3,8 +3,8 @@ import { Separator } from "@/components/ui/separator";
 import Link from "next/link";
 import { TextualLogo } from "@/assets";
 import Image from "next/image";
-import { navMenu } from "@/lib/navbar";
-import { footDesc, footSponsors, footSocials } from "@/lib/footer";
+import { navMenu } from "@/lib/data/navbar";
+import { footDesc, footSponsors, footSocials } from "@/lib/data/footer";
 
 const Footer = () => {
   return (

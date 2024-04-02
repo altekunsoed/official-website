@@ -21,14 +21,12 @@ const DivisionCard = ({
     <Card className="basis-full md:basis-2/3 min-h-72">
       <CardHeader>
         <CardTitle>{title}</CardTitle>
-        <CardDescription>
-          <p>{desc}</p>
-          <Link href={href}>
-            <Button variant={"link"} className="px-0">
-              Learn more...
-            </Button>
-          </Link>
-        </CardDescription>
+        <CardDescription>{desc}</CardDescription>
+        <Link href={href}>
+          <Button variant={"link"} className="px-0">
+            Learn more...
+          </Button>
+        </Link>
       </CardHeader>
     </Card>
   );

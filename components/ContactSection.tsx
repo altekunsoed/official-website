@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import { Button } from "./ui/button";
 import Image from "next/image";
@@ -7,7 +6,7 @@ import { cable } from "@/assets";
 
 const ContactSection = () => {
   return (
-    <section className="w-full px-1 md:px-12">
+    <section className="w-full flex flex-col gap-12 px-1 md:px-12">
       <div className="relative w-full h-96 flex flex-col bg-black rounded-3xl justify-center items-center gap-6 overflow-hidden">
         <Image
           src={cable}

@@ -5,7 +5,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { navMenu } from "@/lib/navbar";
+import { navMenu } from "@/lib/data/navbar";
 import Link from "next/link";
 
 const NavigationMenuMobile = () => {

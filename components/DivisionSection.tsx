@@ -1,7 +1,7 @@
 import React from "react";
 import SectionTitle from "@/components/SectionTitle";
 import { Button } from "@/components/ui/button";
-import { divisionSection, ourDivisions } from "@/lib/division";
+import { divisionSection, ourDivisions } from "@/lib/data/division";
 import DivisionCard from "@/components/DivisionCard";
 import DivisionCardPhoto from "@/components/DivisionCardPhoto";
 import Link from "next/link";

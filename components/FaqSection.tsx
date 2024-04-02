@@ -7,7 +7,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { frequentQuestion } from "@/lib/question";
+import { frequentQuestion } from "@/lib/data/question";
 
 const FaqSection = () => {
   return (

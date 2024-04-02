@@ -14,7 +14,7 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import { OfficialLogo } from "@/assets";
-import { navMenu } from "@/lib/navbar";
+import { navMenu } from "@/lib/data/navbar";
 
 export function NavigationMenuDesktop() {
   return (
