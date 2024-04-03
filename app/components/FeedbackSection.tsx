@@ -68,10 +68,8 @@ const FeedbackSection = () => {
           <div className="self-stretch pr-8 flex-col justify-start items-start flex">
             <div className={`${sora.className} text-xl font-normal`}>
               Your feedback is invaluable to us, and we genuinely welcome the
-              <br />
-              opportunity to engage with you. Please take a moment to
-              <br />
-              complete the form below.
+              opportunity to engage with you. Please take a moment to complete
+              the form below. Don't worry, your feedback will be anonymous.
             </div>
           </div>
         </div>

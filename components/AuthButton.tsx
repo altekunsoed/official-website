@@ -10,8 +10,8 @@ export default async function AuthButton() {
 
   const logout = async () => {
     "use server";
-    const supabse = await createSupabaseServerClient();
-    await supabse.auth.signOut();
+    const supabase = await createSupabaseServerClient();
+    await supabase.auth.signOut();
     redirect("/login");
   };
 
@@ -19,7 +19,7 @@ export default async function AuthButton() {
     <div className="flex items-center gap-4">
       Hey, {data.user.user_metadata.name}!
       <form action={logout}>
-        <Button variant={"destructive"} size={"lg"}>
+        <Button variant={"outline"} size={"lg"}>
           Sign Out
         </Button>
       </form>

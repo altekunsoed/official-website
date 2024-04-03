@@ -1,10 +1,10 @@
-import ContactSection from "@/components/ContactSection";
-import DivisionSection from "@/components/DivisionSection";
-import FaqSection from "@/components/FaqSection";
-import FeedbackSection from "@/components/FeedbackSection";
-import Footer from "@/components/Footer";
-import HeroSection from "@/components/HeroSection";
-import Navbar from "@/components/Navbar";
+import ContactSection from "@/app/components/ContactSection";
+import DivisionSection from "@/app/components/DivisionSection";
+import FaqSection from "@/app/components/FaqSection";
+import FeedbackSection from "@/app/components/FeedbackSection";
+import Footer from "@/app/components/Footer";
+import HeroSection from "@/app/components/HeroSection";
+import Navbar from "@/app/components/Navbar";
 import { createSupabaseServerClient } from "@/lib/supabase/server";
 
 export default async function Home() {

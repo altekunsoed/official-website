@@ -1,9 +1,9 @@
 import React from "react";
-import SectionTitle from "@/components/SectionTitle";
+import SectionTitle from "@/app/components/SectionTitle";
 import { Button } from "@/components/ui/button";
 import { divisionSection, ourDivisions } from "@/lib/data/division";
-import DivisionCard from "@/components/DivisionCard";
-import DivisionCardPhoto from "@/components/DivisionCardPhoto";
+import DivisionCard from "@/app/components/DivisionCard";
+import DivisionCardPhoto from "@/app/components/DivisionCardPhoto";
 import Link from "next/link";
 
 const DivisionSection = () => {
