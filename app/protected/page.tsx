@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { logout } from "@/lib/actions/server";
 import { createSupabaseServerClient } from "@/lib/supabase/server";
 import { redirect } from "next/navigation";
 
@@ -9,13 +10,6 @@ export default async function ProtectedPage() {
   if (error || !data?.user) {
     redirect("/");
   }
-
-  const logout = async () => {
-    "use server";
-    const supabse = await createSupabaseServerClient();
-    await supabse.auth.signOut();
-    redirect("/login");
-  };
 
   return (
     <div className="flex-1 w-full flex flex-col gap-20 items-center">
