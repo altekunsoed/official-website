@@ -18,7 +18,7 @@ export default async function AuthButton() {
       </form>
     </div>
   ) : (
-    <Link href="/login">
+    <Link href="/auth">
       <Button variant={"default"} size={"lg"}>
         Sign In
       </Button>
